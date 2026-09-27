@@ -1,0 +1,29 @@
+{
+  "aircraft": {
+    "name": "A320-like",
+    "mass_kg": 70000,
+    "wing_area_m2": 122.6,
+    "tire_pressure_pa": 1250000
+  },
+  "aerodynamics": {
+    "Cz": 0.1,
+    "Cx_clean": 0.025,
+    "Cx_airbrakes": 0.075
+  },
+  "friction": {
+    "mu_dry": 0.6,
+    "mu_wet": 0.3
+  },
+  "environment": {
+    "rho": 1.225,
+    "g": 9.81
+  },
+  "runway": {
+    "length_m": 2500,
+    "safety_margin": 1.15
+  },
+  "simulation": {
+    "v0_ms": 70.0,
+    "dt_s": 0.01
+  }
+}
