@@ -10,9 +10,9 @@ At first glance, stopping an aircraft on the ground seems like a straightforward
 
 ### Lift
 
-A wing, in cross-section, has an asymmetric shape and is tilted slightly relative to the oncoming air (angle of attack). As air flows over this shape, it gets deflected downward. By Newton's third law, the air pushes back on the wing — upward. That reaction force is lift. It scales with the square of the speed, because two separate effects each scale with speed: the mass of air encountered per second, and the speed at which that air gets deflected. Multiply the two together and you get a v² dependency — a general feature of aerodynamic forces, not a coincidence specific to lift.
+A wing, in cross-section, has an asymmetric shape and is tilted slightly relative to the oncoming air (angle of attack). As air flows over this shape, it gets deflected downward. By Newton's third law, the air pushes back on the wing  upward. That reaction force is lift. It scales with the square of the speed, because two separate effects each scale with speed, the mass of air encountered per second, and the speed at which that air gets deflected. Multiply the two together and you get a v² dependency, a general feature of aerodynamic forces, not a coincidence specific to lift.
 
-On the ground, lift is no longer useful for flying — the aircraft isn't going anywhere but down the runway — but it doesn't disappear. It continues to "steal" part of the aircraft's weight away from the wheels, which is precisely why it matters here even though the aircraft has already landed.
+On the ground, lift is no longer useful for flying; the aircraft isn't going anywhere but down the runway but it doesn't disappear. It continues to "steal" part of the aircraft's weight away from the wheels, which is precisely why it matters here even though the aircraft has already landed.
 
 ### Aerodynamic drag
 
