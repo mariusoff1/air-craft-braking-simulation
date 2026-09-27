@@ -68,13 +68,13 @@ Each file corresponds to one distinct concern; `physics.py` holds nothing but th
 
 ## Results (A320-like aircraft, touchdown speed 70 m/s, 2500 m runway)
 
-| Scenario | Stopping distance | Difference vs. reference |
+| Scenario | Stopping distance | Difference vs reference |
 | --- | --- | --- |
-| Dry — airbrakes deployed | 413.8 m | reference |
-| Dry — airbrakes retracted | 423.2 m | +2.3% |
-| Wet — airbrakes deployed | 801.1 m | +93.6% |
-| Hydroplaning — airbrakes deployed | 4728.2 m | +1042.6% |
-| Wet — airbrake failure | 836.6 m | +102.2% |
+| Dry | 413.8 m | reference |
+| Dry (retracted) | 423.2 m | +2.3% |
+| Wet | 801.1 m | +93.6% |
+| Hydroplaning | 4728.2 m | +1042.6% |
+| Wet (failure) | 836.6 m | +102.2% |
 
 The wet-runway distance is roughly double the dry-runway distance, consistent with published aviation figures for the effect of runway contamination. The hydroplaning case is the most striking; it overshoots the available runway length by a factor of nearly two, and its deceleration curve shows a very distinctive shape almost flat for most of the landing roll (only weak aerodynamic drag is acting, since the wheels have essentially no grip above the hydroplaning threshold), followed by an abrupt jump in deceleration exactly at the moment the aircraft's speed drops back below the critical hydroplaning speed and the tires regain contact with the runway. Seeing that kink appear naturally in the simulated curves rather than being built in by hand was a good sign that the model was behaving the way the underlying physics predicted it should.
 
