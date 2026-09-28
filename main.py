@@ -22,13 +22,13 @@ def main() -> None:
     scenarios = build_scenarios(params)
     results = run_scenarios(scenarios)
 
-    metrics_list = []
+    metric_list = []
     for name, series in results.items():
         m = extract_metrics(name, series, params)
         metrics_list.append(m)
 
     reference = "Dry - airbrakes deployed"
-    metrics_list = compute_comparison(metrics_list, reference)
+    metric_list = compute_comparison(metric_list, reference)
 
     print_comparison_table(metrics_list, reference)
 
@@ -36,7 +36,7 @@ def main() -> None:
     print(f"Figures generated: {created_files}")
 
     assessments = {}
-    for m in metrics_list:
+    for m in metric_list:
         assessments[m["scenario"]] = assess_runway_safety(m["stopping_distance_m"], params)
 
     print_safety_report(assessments)
